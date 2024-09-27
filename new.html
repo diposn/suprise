@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akooo Surprise!</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            font-family: Arial, sans-serif;
+        }
+        #popupContainer {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        #gifImage {
+            max-width: 100%;
+            max-height: 70vh;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showSurprise()">Arko Surprise omgg herne herni</button>
+
+    <div id="popupContainer">
+        <img id="gifImage" src="./cm-chat-media-video-1:646cae49-6138-52b9-8f24-283bacb0dd4f:351076:0:0.MOV" alt="Surprise GIF">
+        <br>
+        <button onclick="closePopup()">Close</button>
+        <a href="index.html">Firtaa janee</a>
+        <label>hehehe opssie</label>
+    </div>
+
+
+
+
+    <script>
+        function showSurprise() {
+            document.getElementById('popupContainer').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popupContainer').style.display = 'none';
+        }
+        function openNew() {
+            document.getElementById('newone').style.display = 'block';
+        }
+
+        // Show the popup automatically after 2 seconds
+        setTimeout(showSurprise, 20000);
+    </script>
+</body>
+</html>
